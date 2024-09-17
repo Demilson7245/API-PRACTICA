@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU API</title>
+    <style>
+        :root {
+            --clr-white: #ffffff;
+            --clr-dark-blue: #191970; /* Midnight Blue */
+            --clr-light-gray: #f5f5f5;
+            --clr-border: #FF6347; /* Tomato */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--clr-dark-blue);
+            font-family: 'Arial', sans-serif;
+            color: var(--clr-white);
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 30px;
+        }
+
+        .menu-item {
+            text-align: center;
+            background-color: var(--clr-light-gray);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 5px solid var(--clr-border);
+        }
+        .titulo{
+            width: 20%;
+            text-align: center;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 5px solid var(--clr-border);
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu-item img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            border: 3px solid var(--clr-border);
+        }
+
+        .menu-item h2 {
+            color: var(--clr-dark-blue);
+            margin-top: 10px;
+        }
+        .h1 {
+            color: black;
+        }
+
+        .menu-item p {
+            color: var(--clr-dark-blue);
+        }
+    </style>
+</head>
+<body>
+    <br>
+   <center><div class="titulo" >
+        <h1>Practicas de API</h2>
+    </div></center> 
+    <div class="menu-container">
+
+        <div class="menu-item">
+            <a href="Api_Dragon_Ballz/index.html"><img src="Imagen/dr.avif" alt="Imagen 1"></a>
+
+            <p>PRACTICA DE API DRAGON BALLZ</p>
+        </div>
+        <div class="menu-item">
+           <a href="Menu.html "><img src="Imagen/pokemon.jpeg" alt="Imagen 2"></a> 
+
+            <p>PRACTICA DE API POKEMON</p>
+        </div>
+    </div>
+</body>
+</html>

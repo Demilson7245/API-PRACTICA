@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación API</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <nav>
+      <a href="../Api_POKEMON/index.html" style="text-decoration: none; " >API Pokemon</a>
+      <a href="../index.html" style="text-decoration: none; " >Menu</a>
+    </nav>
+
+    <section id="personajes">
+        <h1>PERSONAJES</h1>
+<div id="personajesDB">
+    <div class="carousel-container">
+        <div class="carousel-images" id="imgP">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+</div>
+
+
+
+  <!-- Contenedor del modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content" style="width: 30%;">
+      <span class="close">&times;</span>
+      <center><img id="modalImage" src="" alt="Imagen del Personaje" style="width: 40%;"></center>
+
+      <h2 id="modalName"></h2>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
